@@ -39,7 +39,6 @@ cd <nombre-de-la-carpeta-del-repositorio>
 │   └── LeapYear.hs
 └── ...
 ```
-3. *(Opcional recomendado)* Agrega el enlace a tu perfil público de Exercism en un archivo llamado `PERFIL.txt` o al final de este `README.md` para facilitar la verificación de tus ejercicios aprobados.
 
 ### Paso 3: Flujo de Trabajo por Ejercicio
 Por cada ejercicio indicado en la rúbrica, deberás realizar el siguiente proceso:
