@@ -13,74 +13,58 @@ Esta tarea tiene como objetivo principal poner en práctica los conceptos del pa
 
 ---
 
-📋 Instrucciones de Configuración y Entrega
+## Instrucciones de Configuración y Entrega
 
 Para que tu código sea evaluado correctamente, resolverás los ejercicios en Exercism y subirás tus soluciones aprobadas directamente a este repositorio generado por Classroom 50. Sigue estos pasos al pie de la letra:
 
-⚠️ IMPORTANTE (Actualización): NO configures GitHub Syncer en Exercism. Debido a las políticas de permisos de la organización en GitHub, la sincronización automática está bloqueada para repositorios de clase. La entrega se realizará manualmente mediante git push.
+> ⚠️ **IMPORTANTE (Actualización):** **NO configures GitHub Syncer** en Exercism. Debido a las políticas de permisos de la organización en GitHub, la sincronización automática está bloqueada. La entrega se realizará manualmente mediante `git push`.
 
-Paso 1: Configurar Exercism y la CLI local
+### Paso 1: Configurar Exercism y la CLI local
+1. Crea una cuenta en [Exercism](https://exercism.org/) y únete al track de **Haskell**.
+2. Instala la interfaz de línea de comandos (CLI) de Exercism en tu computadora y configúrala con tu token personal.
+3. Asegúrate de tener instalado el compilador de Haskell (**GHC**).
 
-Crea una cuenta en Exercism y únete al track de Haskell.
-
-Instala la interfaz de línea de comandos (CLI) de Exercism en tu computadora y configúrala con tu token personal (exercism configure --token=TU_TOKEN).
-
-Asegúrate de tener instalado el compilador de Haskell (GHC) y sus herramientas (se recomienda instalar mediante GHCup).
-
-Paso 2: Clonar tu repositorio de entrega (Classroom 50)
-
-Clona este repositorio en tu computadora:
-
+### Paso 2: Clonar tu repositorio de entrega (Classroom 50)
+1. Clona este repositorio en tu computadora:
+```bash
 git clone <URL-de-este-repositorio>
 cd <nombre-de-la-carpeta-del-repositorio>
-
-
-Dentro de este repositorio, crea una carpeta por cada ejercicio que resuelvas para mantener tu entrega ordenada. Por ejemplo:
-
+```
+2. Dentro de este repositorio, crea una carpeta por cada ejercicio que resuelvas para mantener tu entrega ordenada. Por ejemplo:
+```text
 ├── README.md
 ├── hello-world/
 │   └── HelloWorld.hs
 ├── leap/
 │   └── LeapYear.hs
 └── ...
+```
+3. *(Opcional recomendado)* Agrega el enlace a tu perfil público de Exercism en un archivo llamado `PERFIL.txt` o al final de este `README.md` para facilitar la verificación de tus ejercicios aprobados.
 
-
-(Opcional recomendado) Agrega el enlace a tu perfil público de Exercism en un archivo llamado PERFIL.txt o al final de este README.md para facilitar la verificación de tus ejercicios aprobados.
-
-Paso 3: Flujo de Trabajo por Ejercicio
-
+### Paso 3: Flujo de Trabajo por Ejercicio
 Por cada ejercicio indicado en la rúbrica, deberás realizar el siguiente proceso:
 
-Descargar el ejercicio mediante la terminal:
-
+1. Descargar el ejercicio mediante la terminal:
+```bash
 exercism download --exercise=[nombre] --track=haskell
-
-
-Escribir tu solución en el archivo .hs correspondiente (usualmente ubicado dentro de la carpeta src/).
-
-Validar localmente que tu código compile y pase todas las pruebas unitarias.
-
-Enviar tu solución a Exercism:
-
+```
+2. Escribir tu solución en el archivo `.hs` correspondiente (usualmente ubicado dentro de la carpeta `src/`).
+3. Validar localmente que tu código compile y pase todas las pruebas unitarias.
+4. Enviar tu solución a Exercism:
+```bash
 exercism submit src/[Archivo].hs
-
-
-Verificar aprobación: Entra a la página web de Exercism y confirma que tu solución haya sido aprobada (todas las pruebas en verde).
-
-Subir la solución a Classroom 50: Copia tu archivo .hs aprobado dentro de la carpeta correspondiente en tu repositorio local de Classroom 50 y súbelo a la rama principal (main):
-
+```
+5. **Verificar aprobación:** Entra a la página web de Exercism y confirma que tu solución haya sido aprobada (todas las pruebas en verde).
+6. **Subir la solución a Classroom 50:** Copia tu archivo `.hs` aprobado dentro de la carpeta correspondiente en tu repositorio local de Classroom 50 y súbelo a la rama principal (`main`):
+```bash
 git add .
 git commit -m "Solución ejercicio: [nombre]"
 git push origin main
+```
 
-
-💡 Recomendaciones para la Entrega
-
-Realiza un commit independiente por cada ejercicio completado para conservar un historial claro de tu avance.
-
-Verifica directamente en GitHub (en tu navegador) que tus archivos .hs aparezcan correctamente en la rama main antes de la fecha límite.
-
-No modifiques la configuración (Settings) del repositorio.
+### 💡 Recomendaciones para la Entrega
+* Realiza un `commit` independiente por cada ejercicio completado para conservar un historial claro de tu avance.
+* Verifica en GitHub que tus archivos `.hs` aparezcan correctamente en la rama `main` antes de la fecha límite.
 
 ---
 
